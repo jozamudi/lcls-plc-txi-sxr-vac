@@ -16,6 +16,7 @@
                                  .i_xMPS_OK			:=  TIPC^txi_sxr_vac^txi_sxr_vac Instance^FSV_task Outputs^GVL_TXI_VAC_VFS.TV2K3_VFS_01.q_xMPS_OK;
                                  .i_eVFS_State		:=	TIPC^txi_sxr_vac^txi_sxr_vac Instance^FSV_task Outputs^GVL_TXI_VAC_VFS.TV2K3_VFS_01.q_eVFS_State;
 '}
+{attribute 'pytmc' := 'pv: TV2K3:VFS:01'}
 TV2K3_VFS_01_Interface : FB_VFS_Interface;
 
 {attribute 'pytmc' := 'pv: TV2K3:VFS:01'}

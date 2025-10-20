@@ -322,7 +322,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{AF9C11FC-61B1-484C-9302-3DB64FC0A315}" Name="txi_sxr_vac" PrjFilePath="..\..\txi_sxr_vac\txi_sxr_vac.plcproj" TmcFilePath="..\..\txi_sxr_vac\txi_sxr_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{F0139050-3D64-345D-50E7-7F1ED8A06165}" TmcPath="txi_sxr_vac\txi_sxr_vac.tmc">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{76AE6B97-83E1-82FF-7485-284B81C3E4D4}" TmcPath="txi_sxr_vac\txi_sxr_vac.tmc">
 			<Name>txi_sxr_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="8" ContextId="1" AreaNo="20">

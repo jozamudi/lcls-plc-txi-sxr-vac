@@ -1,11 +1,11 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R1.0.0/bin/rhel9-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R1.0.0/bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: plc-txi-sxr-vac.tsproj
 #        PLC name: txi_sxr_vac (txi_sxr_vac Instance)
 # Generated using: pytmc 2.18.2
-# Project version: 353506d
-#    Project hash: 353506d25f5becc5df8b25fa8e31ac7e0ee24e75
+# Project version: 1286c98
+#    Project hash: 1286c98409933bb2bf5e2f03282e5cd0aa72552c
 #     PLC IP/host: 172.21.136.29
 #      PLC Net ID: 172.21.136.29.1.1
 #  ** Production mode IOC **
@@ -13,9 +13,9 @@
 #
 # Libraries:
 #
-#   LCLS General: * -> 2.8.1 (SLAC)
-#   LCLS Vacuum: * -> 2.3.1 (SLAC - LCLS)
-#   lcls-twincat-motion: * -> 4.1.1 (SLAC)
+#   LCLS General: * -> 2.12.0 (SLAC)
+#   LCLS Vacuum: * -> 0.0.0.4026 (SLAC - LCLS)
+#   lcls-twincat-motion: * -> 4.2.0 (SLAC)
 #   PMPS: * -> 3.3.0 (SLAC - LCLS)
 #   Tc2_Standard: * -> 3.3.3.0 (Beckhoff Automation GmbH)
 #   Tc2_System: * -> 3.4.26.0 (Beckhoff Automation GmbH)
@@ -29,7 +29,7 @@
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("ENGINEER", "zlentz" )
+epicsEnvSet("ENGINEER", "jozamudi" )
 epicsEnvSet("LOCATION", "PLC:TXI:VAC" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
@@ -52,7 +52,7 @@ epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
 epicsEnvSet("ADS_TIME_SOURCE",  "0")
 
 # Add a route to the PLC automatically:
-system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.136.29 ^172.*$")
+system("${ADS_IOC_TOP}/scripts/add_route.sh 172.21.136.29 ^172.*")
 
 # adsAsynPortDriverConfigure(portName, ipaddr, amsaddr, amsport,
 #    asynParamTableSize, priority, noAutoConnect, defaultSampleTimeMS,
@@ -91,14 +91,14 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:TXI:VAC,IDX=1
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:TXI:VAC,IDX=2,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:TXI:VAC")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:VAC,PROJECT=plc-txi-sxr-vac.tsproj,HASH=353506d,VERSION=353506d,PYTMC=2.18.2,PLC_HOST=172.21.136.29")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:TXI:VAC,PROJECT=plc-txi-sxr-vac.tsproj,HASH=1286c98,VERSION=1286c98,PYTMC=2.18.2,PLC_HOST=172.21.136.29")
 
-#   LCLS General: * -> 2.8.1 (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=LCLS_General,VERSION=2.8.1,VENDOR=SLAC")
-#   LCLS Vacuum: * -> 2.3.1 (SLAC - LCLS)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=LCLS_Vacuum,VERSION=2.3.1,VENDOR=SLAC - LCLS")
-#   lcls-twincat-motion: * -> 4.1.1 (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=lcls-twincat-motion,VERSION=4.1.1,VENDOR=SLAC")
+#   LCLS General: * -> 2.12.0 (SLAC)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=LCLS_General,VERSION=2.12.0,VENDOR=SLAC")
+#   LCLS Vacuum: * -> 0.0.0.4026 (SLAC - LCLS)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=LCLS_Vacuum,VERSION=0.0.0.4026,VENDOR=SLAC - LCLS")
+#   lcls-twincat-motion: * -> 4.2.0 (SLAC)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=lcls-twincat-motion,VERSION=4.2.0,VENDOR=SLAC")
 #   PMPS: * -> 3.3.0 (SLAC - LCLS)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:TXI:VAC,DEPENDENCY=PMPS,VERSION=3.3.0,VENDOR=SLAC - LCLS")
 #   Tc2_Standard: * -> 3.3.3.0 (Beckhoff Automation GmbH)

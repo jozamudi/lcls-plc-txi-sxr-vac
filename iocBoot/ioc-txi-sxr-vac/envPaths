@@ -10,5 +10,5 @@ epicsEnvSet("ASYN","/cds/group/pcds/epics/R7.0.3.1-2.0/modules/asyn/R4.39-1.0.2"
 epicsEnvSet("ADS","/cds/group/pcds/epics/R7.0.3.1-2.0/modules/twincat-ads/R2.0.0-0.0.10")
 epicsEnvSet("CAPUTLOG","/cds/group/pcds/epics/R7.0.3.1-2.0/modules/caPutLog/R4.0-1.0.0")
 epicsEnvSet("EPICS_BASE","/cds/group/pcds/epics/base/R7.0.3.1-2.0")
-epicsEnvSet("IOC_TOP", "/cds/home/z/zlentz/temp/lcls-plc-txi-sxr-vac/iocBoot/ioc-txi-sxr-vac")
+epicsEnvSet("IOC_TOP", "/reg/g/pcds/epics-dev/jozamudi/txi/lcls-plc-txi-sxr-vac/iocBoot/ioc-txi-sxr-vac")
 epicsEnvSet("IOC_DATA", "/cds/data/iocData")
